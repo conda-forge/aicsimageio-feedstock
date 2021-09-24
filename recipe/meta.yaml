@@ -38,6 +38,8 @@ requirements:
     - psutil
     # [bioformats]
     - bioformats_jar
+    # [lif]
+    - readlif
     
 
 test:
