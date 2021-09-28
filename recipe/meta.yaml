@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -30,6 +30,17 @@ requirements:
     - tifffile >=2021.6.6
     - xarray >=0.16.1
     - zarr >=2.6
+
+    # Extra Formats (included by default)
+    # [base-imageio]
+    - imageio
+    - imageio-ffmpeg
+    - psutil
+    # [bioformats]
+    - bioformats_jar
+    # [lif]
+    - readlif
+    
 
 test:
   imports:
