@@ -1,5 +1,5 @@
 {% set name = "aicsimageio" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 478330ac9dc1cd1f0d68c258be618b23ec2c76fafd06fb8e516cf247ede6d6b2
+  sha256: 9e453b4b7b3018ab98181c62045c2dad57400dea422d9a1062e10d3a0024ff50
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python"
+  summary: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python
   doc_url: https://allencellmodeling.github.io/aicsimageio/index.html
   dev_url: https://github.com/AllenCellModeling/aicsimageio
 
