@@ -37,10 +37,6 @@ requirements:
     - imageio
     - imageio-ffmpeg
     - psutil
-    # [bioformats]
-    - bioformats_jar
-    # [lif]
-    - readlif
 
 
 test:
