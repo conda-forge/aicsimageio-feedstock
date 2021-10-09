@@ -1,5 +1,5 @@
 {% set name = "aicsimageio" %}
-{% set version = "4.2.0" %}
+{% set version = "4.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9e453b4b7b3018ab98181c62045c2dad57400dea422d9a1062e10d3a0024ff50
+  sha256: 9b94fd44c0018baad9c6ee377e1c20d4ba3db9edd2446c50137740bf441d771e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -37,10 +37,6 @@ requirements:
     - imageio
     - imageio-ffmpeg
     - psutil
-    # [bioformats]
-    - bioformats_jar
-    # [lif]
-    - readlif
 
 
 test:
