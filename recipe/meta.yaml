@@ -1,5 +1,5 @@
 {% set name = "aicsimageio" %}
-{% set version = "4.5.1" %}
+{% set version = "4.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: afed4200415fbac46fe161de8e43d5275ab6647e23eacd7bdadb63104fb4f84d
+  sha256: 401b7be3aeeb82c3439444831e02906ad93cf3937b75e58630f4e0697a23de0f
 
 build:
   noarch: python
