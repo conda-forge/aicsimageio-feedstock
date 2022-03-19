@@ -5,7 +5,7 @@ Home: https://github.com/AllenCellModeling/aicsimageio
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aicsimageio-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aicsimageio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Image Reading, Metadata Conversion, and Image Writing for Microscopy Images in Pure Python
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13944&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aicsimageio-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13944&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aicsimageio-feedstock?branchName=main">
       </a>
     </td>
   </tr>
