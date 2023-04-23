@@ -29,9 +29,9 @@ requirements:
     - ome-types >=0.3.3
     - ome-zarr >=0.6.1
     - resource_backed_dask_array >=0.1.0
-    - tifffile >=2021.8.30
+    - tifffile >=2021.8.30,<2023.3.15
     - wrapt >=1.12
-    - xarray >=0.16.1
+    - xarray >=0.16.1,<2023.02.0
     - xmlschema
     - zarr >=2.6
 
