@@ -43,8 +43,13 @@ requirements:
 
 
 test:
+  requires:
+    - pip
   imports:
     - aicsimageio
+  commands:
+    - pip list
+    - pip check
 
 about:
   home: https://github.com/AllenCellModeling/aicsimageio
