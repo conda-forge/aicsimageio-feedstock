@@ -39,7 +39,7 @@ requirements:
     # Extra Formats (included by default)
     # [base-imageio]
     - imageio >=2.11.0,<2.28.0
-    - imageio-ffmpeg >=2.11.0,<2.28.0
+    - imageio-ffmpeg
     - psutil >=5.7.0
 
 
