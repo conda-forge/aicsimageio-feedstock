@@ -44,6 +44,9 @@ requirements:
     - imageio-ffmpeg
     - psutil >=5.7.0
 
+  run_constrained:
+    - scikit-image <0.23
+
 
 test:
   requires:
