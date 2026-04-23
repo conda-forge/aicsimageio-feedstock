@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0f6684587b1d833ce5b10f3e81314e2a89269cd94bd09747fcd6460f3119855c
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install .[all] -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - pytest-runner >=5.2
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - dask >=2021.4.1
     - fsspec >=2022.8.0,<2023.9.0
     - imagecodecs >=2020.5.30
@@ -58,6 +58,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - aicsimageio
   commands:
